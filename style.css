@@ -1,0 +1,152 @@
+#header-image {}
+
+body {
+    background-image: url('http://i.imgur.com/qOqCx0Z.png?1');
+    background-size: cover;
+}
+
+#header-bottom-border {
+    border: 10px solid #FFCF33;
+    padding: 1em;
+    background-color: orange;
+}
+
+#header-left-border {
+    border: 5px solid #FFCF33;
+    position: absolute;
+    top: .5em;
+    left: 0%;
+    height: 63em;
+    width: 5px;
+    background-color: #FFCF33;
+    padding: 1em 0;
+}
+
+#header-right-border {
+    border: 5px solid #FFCF33;
+    position: absolute;
+    top: .5em;
+    left: 99%;
+    height: 63em;
+    width: 5px;
+    background-color: #FFCF33;
+    padding: 1em 0;
+}
+
+#about-image {
+    background: 3px solid blue;
+    position: absolute;
+    width: 300px;
+    color: blue;
+    top: 25em;
+    left: 10em;
+}
+
+#core-image {
+    background: 3px solid blue;
+    position: absolute;
+    width: 200px;
+    color: blue;
+    top: 35em;
+    left: 65em;
+}
+
+#hobbies-image {
+    background: 3px solid blue;
+    position: absolute;
+    width: 300px;
+    color: blue;
+    top: 48em;
+    left: 10em;
+}
+
+body {
+    /* Typography Decorations*/
+    color: #222222;
+    font-size: 1em;
+    font-family: "open sans", "Helvetica Neue", "sans-serif";
+}
+
+.about-me > p,
+.core-values > p,
+.hobbies > p,
+.content-footer > p {
+    /*Typography Decorations*/
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.masthead {
+    padding: .1em 0;
+    /* background-color:grey;*/
+    background-image: url ('https://unsplash.com/photos/Hc42xXu_WOg');
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+    border-top: solid 1em #FFCF33;
+    color: orange;
+}
+
+.content-footer {
+    text-align: center;
+}
+
+.content-footer {
+    /* Red, Green, Blue: #RRGGBB */
+    background-color: #FFCF33;
+}
+
+.masthead-intro {
+    top: 3em;
+    left: 50%;
+    margin-bottom: 0.1em;
+    font-family: "open sans", Georgia, serif;
+    font-size: 2em;
+    position: absolute;
+}
+
+.masthead-heading {
+    top: 2em;
+    left: 35%;
+    position: absolute;
+    margin-top: -0.2em;
+    font-family: "open sans", Georgia, serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+p {
+    text-indent: 35px;
+}
+
+.masthead-intro {
+    text-indent: 0;
+}
+
+.say-hi {
+    text-indent: 0;
+}
+
+#header {
+    border: 3px solid black;
+    position: absolue;
+    text-align: center;
+    width: 100%;
+    color: grey;
+}
+
+#picture {}
+
+.about-me,
+.core-values,
+.hobbies,
+.dream-job {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social > li {
+    display: inline-block;
+}
