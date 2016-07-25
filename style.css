@@ -105,13 +105,15 @@ body {
 }
 
 .masthead-heading {
-    top: 2em;
-    left: 35%;
+    width: 100%;
+    top: 3em;
+    left: 0%;
+    text-align: center;
     position: absolute;
     margin-top: -0.2em;
     font-family: "open sans", Georgia, serif;
     font-weight: bold;
-    font-size: 6em;
+    font-size: 3.5rem;
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
@@ -149,4 +151,18 @@ p {
 
 .social > li {
     display: inline-block;
+}
+
+@media (max-width: 1420px) {
+    .masthead {
+        padding: 3em 0;
+    }
+    .masthead-heading h1 {
+        font-size: 3rem;
+    }
+    #about-image,
+    #core-image,
+    #hobbies-image {
+        display: none;
+    }
 }

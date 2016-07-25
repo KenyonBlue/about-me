@@ -1,0 +1,203 @@
+/* -------------------------------------
+CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules bellow)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+    background-image: url('http://i.imgur.com/qOqCx0Z.png?1');
+    background-size: cover;
+    /* Typography Decorations*/
+    color: #222222;
+    font-size: 1em;
+    font-family: "open sans", "Helvetica Neue", "sans-serif";
+}
+
+p {
+    text-indent: 35px;
+}
+
+.about-me > p,
+.core-values > p,
+.hobbies > p,
+.content-footer > p {
+    /*Typography Decorations*/
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+.masthead {
+    padding: .1em 0;
+    /* background-color:grey;*/
+    background-image: url ('https://unsplash.com/photos/Hc42xXu_WOg');
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+    border-top: solid 1em #FFCF33;
+    color: orange;
+}
+
+.masthead .masthead-intro {
+    top: 3em;
+    left: 50%;
+    margin-bottom: 0.1em;
+    font-family: "open sans", Georgia, serif;
+    font-size: 2em;
+    position: absolute;
+    text-indent: 0;
+}
+
+.masthead .masthead-heading {
+    top: 2em;
+    left: 35%;
+    position: absolute;
+    margin-top: -0.2em;
+    font-family: "open sans", Georgia, serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.masthead #header-image {
+    border: 3px solid black;
+    position: absolue;
+    text-align: center;
+    width: 100%;
+    color: grey;
+}
+
+.masthead #header-bottom-border {
+    border: 10px solid #FFCF33;
+    padding: 1em;
+    background-color: orange;
+}
+
+.masthead #header-left-border {
+    border: 5px solid #FFCF33;
+    position: absolute;
+    top: .5em;
+    left: 0%;
+    height: 63em;
+    width: 5px;
+    background-color: #FFCF33;
+    padding: 1em 0;
+}
+
+.masthead #header-right-border {
+    border: 5px solid #FFCF33;
+    position: absolute;
+    top: .5em;
+    left: 99%;
+    height: 63em;
+    width: 5px;
+    background-color: #FFCF33;
+    padding: 1em 0;
+}
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+.about-me,
+.core-values,
+.hobbies,
+.dream-job {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-me h3,
+.core-values h3,
+.hobbies h3,
+.dream-job h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.about-me #about-image {
+    background: 3px solid blue;
+    position: absolute;
+    width: 300px;
+    color: blue;
+    top: 25em;
+    left: 10em;
+}
+
+.core-values #core-image {
+    background: 3px solid blue;
+    position: absolute;
+    width: 200px;
+    color: blue;
+    top: 35em;
+    left: 65em;
+}
+
+.hobbies #hobbies-image {
+    background: 3px solid blue;
+    position: absolute;
+    width: 300px;
+    color: blue;
+    top: 48em;
+    left: 10em;
+}
+
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
+
+.content-footer {
+    /* Red, Green, Blue: #RRGGBB */
+    background-color: #FFCF33;
+    text-align: center;
+}
+
+.content-footer .say-hi {
+    text-indent: 0;
+}
+
+.content-footer .social > li {
+    display: inline-block;
+}
+
+
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles bellow this line
+*/
